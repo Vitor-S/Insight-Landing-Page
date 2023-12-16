@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+main, html, body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body{
+    min-height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logo-container, #login-container{
+    height: 100%;
+    padding: 0 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#logo{
+    height: 40%;
+}
+
+#logo-container h3{
+    font-size: max(20px, 2vw);
+    font-weight: bold;
+    color: #fff;
+}
+
+.border-button{
+    background-color: transparent;
+    border: none;
+    border: 3px solid #223f4e;
+    padding: 7px 35px;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #223f4e;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+.border-button:hover{
+    cursor: pointer;
+}
+
+.border-button:active{
+    background-color: rgba(235, 235, 235, 0.1);
+}
+
+#first{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1903/783;
+    background-color: #FFBE66;
+}
+
+#first img{
+    width: 100%;
+    aspect-ratio: 1903/783;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#first article{
+    position: absolute;
+    left: 10%;
+    top: 15vw;
+}
+
+#first article h1{
+    font-size: 6vw;
+    letter-spacing: -2px;
+    color: #234f6b;
+    padding: 0;
+    margin: 0;
+}
+
+#first article p{
+    font-size: max(8px, 2.5vw);
+    color: #fff;
+}
+
+#second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 50px 0;
+}
+
+#second article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second article h1{
+    font-weight: bold;
+    font-size: max(30px, 5vw);
+    letter-spacing: -2px;
+    text-align: center;
+}
+
+#second article p{
+    width: 80%;
+    text-align: center;
+    font-size: max(16px, 2.5vw);
+}
+
+#second #filters{
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+#second #filters button{
+    background-color: transparent;
+    border: none;
+    border: 2px solid #5b6063;
+    padding: 1vw 3vw;
+    font-size: .9vw;
+    color: #5b6063;
+    transition: 0.15s ease-in-out;
+}
+
+#second #filters button:hover{
+    cursor: pointer;
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+#second #content {
+    height: 50vw;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5%;
+    overflow: visible;
+}
+
+#second #content .single, .double {
+    width: 100%;
+    height: 100%;
+}
+
+.double, .single{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    transition: .15s ease-in-out;
+}
+
+.double:hover, .single:hover{
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.double{
+    grid-column: span 2;
+}
+
+
+.single{
+    flex-direction: column;
+}
+
+.single .icon{
+    width: 45%;
+    aspect-ratio: 1/1;
+}
+
+.double .icon{
+    width: 25%;
+    aspect-ratio: 1/1;
+}
+
+.info{
+    width: 80%;
+}
+
+.info h5{
+    font-size: 1.1vw;
+    color: #fff;
+}
+
+.info p{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.double .info{
+    width: 45%;
+} 
+
+#completion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 120vh;
+}
+
+#save-tax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    height: 40%;
+    width: 100%;
+    background-color: #ebebeb;
+    border-top: 3px solid #d2d2d2;
+    border-bottom: 3px solid #d2d2d2;
+}
+
+#save-tax img{
+    height: 90%;
+    align-self: flex-end;
+}
+
+#save-tax article{
+    width: 35%;
+}
+
+#save-tax article h1{
+    font-weight: bold;
+    font-size: 3vw;
+    color: #1f3f4e;
+
+}
+
+#save-tax article p{
+    width: 70%;
+    font-size: max(16px, 1.5vw);
+
+}
+
+#save-tax article button{
+    padding: 1vw 6vw;
+    border: none;
+    background-color: #264961;
+    color: #fff;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    margin-top: 40px;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+#save-tax article button:hover{
+    cursor: pointer;
+    background-color: #12252e;
+}
+
+#contact{
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact h3{
+    font-size: 3.5vw;
+    color: #465c68;
+}
+
+#contact p{
+    font-size: 1.5vw;
+    color: #465c68;
+    margin-bottom: 5%;
+}
+
+#contact a{
+    position: relative;
+    font-size: 1.8vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #464b68;
+}
+
+#contact a::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    background-color: #465c68;
+    width: 0;
+    transition: .3s ease-in-out;
+}
+
+#contact a:hover::before{
+    width: 100%;
+}
+
+#contact img{
+    width: 8vw;
+}
+
+#subscribe, #question{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 50%;
+}
+
+#subscribe{
+    border-right: 1px solid #000;
+}
+
+#question{
+    border-left: 1px solid #000;
+}
+
+footer{
+    display: flex;
+    color: #fff;
+    height: 200px;
+    background-color: #273245; 
+    padding: 60px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer ul li{
+    margin-top: 5%;
+}
+
+#footer-links{
+    display: flex;
+    gap: 20%;
+}
+
+#footer-links a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2vw;
+} 
+
+#footer-links a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: .3s ease-in-out;
+}
+
+#footer-links a:hover::before{
+    width: 100%;
+}
+
+#footer-links, #footer-medias{
+    width: 50%;
+    height: 100%;
+}
+
+#footer-medias ul{
+    display: flex;
+    justify-content: end;
+    gap: 5%;
+}
+
+#footer-medias ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid gray;
+    transition: .3s ease-in-out;
+}
+
+#footer-medias ul li:hover{
+    cursor: pointer;
+    background-color: rgba(230, 230, 230, 0.2);
+}
+
+i{
+    color: #d4d4d4;
+}
+
+@media (max-width: 600px) {
+    #second #filters button{
+        font-size: 2.5vw;
+    }
+
+    #completion{
+        height: 80vh;
+    }
+
+    #save-tax{
+        height: 50%;
+    }
+
+    #save-tax img {
+        display: none;
+    }
+
+    #save-tax article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    #save-tax article h1{
+        font-size: 7vw;
+    }
+
+    #save-tax article p{
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    #save-tax article button{
+        padding: 10px 30px;
+        font-size: 3vw;
+    }
+
+    #contact{
+        height: 20vh;
+    }
+
+    #subscribe, #question{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #footer-medias ul{
+        font-size: 2vw;
+        gap: 5%;
+    }
+    
+    #footer-medias ul li{
+        width: 25px;
+    }
+    
+    #footer-links ul a, h3{
+        font-size: 2.5vw;
+    }
+
+    .border-button{
+        font-size: 3vw;
+        padding: 5px 40px;
+    }
+
+    header{
+        display: none;
+    }
+}
+
+@media (max-width: 1100px){
+    #second{
+        gap: 20px;
+    }
+
+    #second  #filters{
+        width: 90vw;
+    } 
+
+    #second #filters button{
+        font-size: 2.8vw;
+        border-width: 1px;
+    }
+
+    #second #content {
+        height: 90vw;
+        width: 90vw;
+    } 
+
+    .info h5{
+        font-size: 2.2vw;
+        color: #fff;
+    }
+}
